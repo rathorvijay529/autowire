@@ -1,0 +1,33 @@
+Autowire - It is the technique to inject the dependency implicitly.(Automatically)It works with the references only we can not autowire literals or primitive types.
+
+Types
+1. byName(Id in the bean.xml should be same as refernce in the class and it uses setter injection internally)
+2 byType( property name i.e. refrence in class) and bean id will be  diffrent ans class tag will tell type dependancy it is using setter injection manuaaly)
+3.byContructor(it will call constructor internally)
+4 Autodetect(Spring 3)Depricated
+5 No 
+
+
+Annotation
+1. @Autowired - we can used the annotation with the field, setter, construtor if we are using annotation with field then there is no use of setter and construtor.if we are using with setter, setter will be called and if we are using construtor construtor will call. autowire is not used for primitive and collections
+2. @Qualifier - The @Qualifier is the annotation which is used when byType injection is failing at that time spring will confused which bean is to used there will be ambiguity to reslve this problem we r using this annotation. 
+3. @Value
+4. @Required
+
+
+Stereo Type Annotation
+1.  @Component
+2.  @Controller/@RestController
+3.  @Service
+4.  @Repository
+5.  @ComponenetScamp
+6   @Resource
+7   @RequestMapping
+8.  @Transaction
+9.  @Bean
+10. @Scope
+11. @Primary
+12. @EnableAutoConfiguration
+13. @EnableTransactionManagement
+14. @EnableWebSecurities
+15. @RequestBody
